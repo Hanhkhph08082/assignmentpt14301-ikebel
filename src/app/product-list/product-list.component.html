@@ -1,0 +1,129 @@
+<body>
+	<!-- main -->
+	<div class="main-banner-2" id="home">
+		<!-- header -->
+		<header>
+			<div class="container-fluid">
+				<div class="header d-md-flex justify-content-between align-items-center py-sm-4 py-3 px-xl-5 px-lg-3 px-2">
+				
+					<div id="logo">
+						<h1><a class="" href="index.html">Natural Cosmetics</a></h1>
+					</div>
+				
+					<div class="nav_w3ls">
+						<nav>
+						  <label for="drop" class="toggle toogle-2">Menu</label>
+						  <input type="checkbox" id="drop" />
+						  <ul class="menu">
+							<li><a routerLink="/home">Home</a></li>
+							<li class="mx-lg-4 mx-md-3 my-md-0 my-2"><a routerLink="/about">About Us</a></li>
+						
+							<li class="active"><a class="mx-lg-4 mx-md-3 my-md-0 my-2" routerLink="/prolist">ProductList</a></li>
+							<li><a class="mx-lg-4 mx-md-3 my-md-0 my-2" routerLink="/contact">Contact Us</a></li>
+							<li><a class="mx-lg-4 mx-md-3 my-md-0 my-2" routerLink="/admin">Manager</a></li>
+						  </ul>
+						</nav>
+					  </div>
+		
+				</div>
+			</div>
+		</header>
+	
+	</div>
+	
+     <div class="breadcrumb-w3ls py-1">
+        
+            <ol class="breadcrumb m-0">
+                <li class="breadcrumb-item">
+                    <a routerLink="/home">Home</a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">ProductList</li>
+            </ol>
+        
+    </div>
+     <div class="banner">
+		<div class="wthreeproductdisplay">
+			<div class="container" >
+				<div class="top-grid" >
+					<div class="cart-grid" id="cart-8" *ngFor="let product of products |slice: (page-1) * pageSize : (page-1) * pageSize + pageSize" >
+                        <div class="infor1">
+                           <a class="my-3 font-weight-bold" routerLink="/Detail/{{product.id}}">{{product.name}}</a>
+                        </div>
+						<div class="img">
+							<a routerLink="/prodetail">
+							<img src="{{product.img}}" alt="img">
+							</a>
+						</div>
+						<ul class="info">
+							<li>${{product.price}}</li>
+							
+						</ul>
+						<div class="snipcart-details ">
+							<form action="#" method="post">
+								<input type="hidden" name="cmd" value="_cart">
+								<input type="hidden" name="add" value="1">
+								<input type="hidden" name="w3l_item" value="Striped Top ">
+								<input type="hidden" name="amount" value="25.00">
+								<input type="hidden" name="item_name" value="Product #001" />
+								<button type="submit" class="button w3l-cart" data-id="cart-1">add to cart</button>
+							</form>
+						</div>
+					</div>
+          	
+	 </div>
+	 
+	
+	 <div class="clear"></div>
+
+</div> 
+</div>
+	    <ngb-pagination
+  [(page)]="page"
+  [pageSize]="pageSize"
+  [collectionSize]="products.length">
+  </ngb-pagination>
+	</div>
+  
+   
+  
+
+
+     
+	
+		
+
+
+
+	<!-- footer -->
+	<footer class="py-5">
+    <section class="buttom-footer py-lg-4 py-md-3 py-sm-3 py-3">
+      <div class="container pt-lg-5 pt-md-5 pt-sm-4 pt-4">
+         <div class="row footer-agile-grids ">
+            <div class="col-lg-6 col-md-12 wthree-left-right">
+               <div class="row">
+                  <div class="col-md-4 footer-header pl-0">
+					<h5><a routerLink="/home">Natural Cosmetics</a></h5>
+                
+                  </div>
+                  <div class="col-md-8 footer-para">
+                     <p>Melbourne,south Brisbane,<br>QLD 4101,Aurstralia.</p>
+                     <p>+(000) 123 4565 32</p>
+                     
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-3 col-md-12 wthree-left-right">
+              
+               <h4 class="pb-lg-3 pb-3 red">About Us</h4>
+               <div class="address-para">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+               </div>
+            </div>
+           
+         </div>
+      </div>
+   </section>
+  </footer>
+	<!-- //footer -->
+
+</body>
