@@ -12,9 +12,7 @@ getListProduct(): Observable<Product[]> {
     return this.http.get<Product[]>(this.api);
   }
 
-//  deleteProduct(id):Observable<Product[]>{
-//   return this.http.get<Product[]>(`${this.api}/${id}`)
-// }
+
 deleteProduct(id) {
     return this.http.delete(`${this.api}/${id}`);
   }
@@ -24,9 +22,8 @@ deleteProduct(id) {
   insertProduct(product: Product) {
     return this.http.post<Product>(`${this.api}`, product);
   }
-  // @ts-ignore
+
   getbyID = (id: number) => {
-    // tslint:disable-next-line:no-shadowed-variable
     return this.http.get<Product>(`${this.api}/${id}`);
   }
 
