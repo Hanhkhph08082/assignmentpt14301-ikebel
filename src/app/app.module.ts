@@ -17,10 +17,11 @@ import { ProductaddComponent } from './admin/productadd/productadd.component';
 import { ManagerProductComponent } from './admin/manager-product/manager-product.component';
 import { ProductEditComponent } from './admin/product-edit/product-edit.component';
 import { ProductDetailComponent } from './admin/product-detail/product-detail.component';
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
 
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule,AppRoutingModule,HttpClientModule , NgbModule],
+  imports:      [ BrowserModule, FormsModule,AppRoutingModule,HttpClientModule , NgbModule, Ng2SearchPipeModule],
   declarations: [ AppComponent, HelloComponent, ProductListComponent,   AboutComponent, HomeComponent, ProductDetailsComponent,  ContactComponent, AdminComponent, ProductaddComponent, ManagerProductComponent, ProductEditComponent, ProductDetailComponent],
   bootstrap:    [ AppComponent ],
   providers: [ProductService]
