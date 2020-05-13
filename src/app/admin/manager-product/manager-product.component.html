@@ -9,8 +9,7 @@
                 <tr>
                     <th>ID</th>
                     <th>Tên</th>
-                    <th>Giá</th>
-                    <!-- <th>Image</th> -->
+                    <th>Giá</th>                
                     <th>Mô tả</th>
                     <th colspan="3">Action</th>
                 </tr>           
@@ -18,7 +17,6 @@
                     <td>{{product.id}}</td>
                     <td>{{product.name}}</td>
                     <td>{{product.price}}</td>
-                    <!-- <td>{{product.img}}</td> -->
                     <td>{{product.desc}}</td>             
                     <td><button class="btn btn-primary" (click)="detail(product.id)">Chi tiết</button></td>
                     <td><button class="btn btn-primary" (click)="getid(product.id)">Sửa</button></td>

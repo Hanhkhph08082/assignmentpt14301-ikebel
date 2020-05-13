@@ -11,15 +11,10 @@ export class ProductEditComponent implements OnInit {
 product:Product;
 
  Update(product: Product) {
-
   this.productService.updateProduct(product).subscribe(value =>{
-      // console.log(value);
-       this.router.navigateByUrl('/manager')
-      
+       this.router.navigateByUrl('/manager')     
     });
-   
   
-    
   }
   constructor(private productService:ProductService,
     private route:ActivatedRoute,

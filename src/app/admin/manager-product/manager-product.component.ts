@@ -14,11 +14,12 @@ export class ManagerProductComponent implements OnInit {
 //Pagination
 
 page=1;
-  pageSize=6;
+pageSize=6;
  
 products: Product[];
 
-  constructor(private productService: ProductService,
+  constructor(
+    private productService: ProductService,
     private router: Router,
     ) {    }
 
