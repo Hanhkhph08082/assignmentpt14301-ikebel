@@ -48,6 +48,7 @@
 					<div class="cart-grid" id="cart-8" *ngFor="let product of products |slice: (page-1) * pageSize : (page-1) * pageSize + pageSize" >
                         <div class="infor1">
                            <a class="my-3 font-weight-bold" routerLink="/Detail/{{product.id}}">{{product.name}}</a>
+                        
                         </div>
 						<div class="img">
 							<a routerLink="/prodetail">
@@ -83,16 +84,6 @@
   [collectionSize]="products.length">
   </ngb-pagination>
 	</div>
-  
-   
-  
-
-
-     
-	
-		
-
-
 
 	<!-- footer -->
 	<footer class="py-5">
