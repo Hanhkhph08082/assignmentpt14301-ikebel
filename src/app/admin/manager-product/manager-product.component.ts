@@ -11,7 +11,7 @@ import {Router} from '@angular/router';
 })
 
 export class ManagerProductComponent implements OnInit {
-//Pagination
+
 
 page=1;
 pageSize=6;

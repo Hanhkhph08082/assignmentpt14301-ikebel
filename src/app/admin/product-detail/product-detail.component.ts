@@ -10,7 +10,8 @@ import {Router,ActivatedRoute} from '@angular/router';
 })
 export class ProductDetailComponent implements OnInit {
 product:Product;
-  constructor(private productService:ProductService,
+  constructor(
+    private productService:ProductService,
     private route:ActivatedRoute,
     private router:Router) { }
 

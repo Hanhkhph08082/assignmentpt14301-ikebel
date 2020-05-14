@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-
 import { Product } from '../Product';
 import { ProductService } from '../service/product.service';
 
@@ -12,7 +11,7 @@ export class ProductListComponent implements OnInit {
 
 
 page=1;
-  pageSize=6;
+pageSize=6;
 products:Product[];
 
   constructor(
