@@ -16,13 +16,14 @@ product:Product;
     private router:Router) { }
 
   ngOnInit() {
-    this.route.paramMap.subscribe(params => {
+   this.route.paramMap.subscribe(params => {
       const id = Number(params.get('id'));
     
-      this.productService.getbyID(id).subscribe(data =>{
+    this.productService.getbyID(id).subscribe(data =>{
         this.product =data;
       });
     });
   }
+  
 
 }
