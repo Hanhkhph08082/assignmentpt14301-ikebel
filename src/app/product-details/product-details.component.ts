@@ -23,15 +23,5 @@ product:Product;
       });
     });
   }
-// getProduct(){
-//     this.route.params.subscribe(param =>{
-//       // console.log(param)
-//       this.product=this.productService.getProduct(param.id);
-//   })
-//   }
-  // submitForm(){
-  //   this.productService.updateProduct(this.product);
-  //   this.router.navigate(['/productlist'])
-  // }
 
 }

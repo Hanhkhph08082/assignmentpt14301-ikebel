@@ -10,14 +10,15 @@ import {Router,ActivatedRoute} from '@angular/router';
 export class ProductaddComponent implements OnInit {
 product: Product = new Product();
 
-  constructor(private productService: ProductService,
-  private route:Router) { }
+  constructor(
+        private productService: ProductService,
+        private route:Router) { }
 
   ngOnInit() {
 
   }
   Insert(){
- this. productService.insertProduct(this.product) .subscribe(data =>
+    this. productService.insertProduct(this.product) .subscribe(data =>
     this.route.navigateByUrl('/manager')
        )
   }
