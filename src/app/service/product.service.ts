@@ -15,7 +15,7 @@ getListProduct(): Observable<Product[]> {
   }
 
 
-deleteProduct(id) {
+ deleteProduct(id) {
     return this.http.delete(`${this.api}/${id}`);
   }
  updateProduct(product: Product) {
