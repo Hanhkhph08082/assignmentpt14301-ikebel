@@ -18,7 +18,7 @@ product: Product = new Product();
 
   }
   Insert(){
-    this. productService.insertProduct(this.product) .subscribe(data =>
+    this. productService.insertProduct(this.product).subscribe(data =>
     this.route.navigateByUrl('/manager')
        )
   }
