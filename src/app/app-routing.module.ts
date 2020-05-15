@@ -13,6 +13,7 @@ import { ProductDetailComponent } from './admin/product-detail/product-detail.co
 
 const routes: Routes = [
   {path:'',redirectTo:'/home',pathMatch:'full'},
+  
   {path:'home',component:HomeComponent},
   {path:'about',component:AboutComponent},
   {path:'contact',component:ContactComponent},
